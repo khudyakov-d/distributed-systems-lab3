@@ -1,0 +1,4 @@
+ru/nsu/ccfit/khudyakov/lab3/MainApplicationTests.java
+ ru.nsu.ccfit.khudyakov.lab3.MainApplicationTests
+ru/nsu/ccfit/khudyakov/lab3/osm/nodes/NodeServiceIntegrationTest.java
+ ru.nsu.ccfit.khudyakov.lab3.osm.nodes.NodeServiceIntegrationTest

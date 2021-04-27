@@ -1,0 +1,7 @@
+spring:
+  jpa:
+    database: h2
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: "jdbc:h2:mem:AZ;INIT=RUNSCRIPT FROM 'classpath:init.sql';MODE=PostgreSQL"
+    driver-class-name: org.h2.Driver
