@@ -32,6 +32,11 @@ class NodeService {
         }
 
         List<Tag> tags = node.getTags();
+        if (tags == null) {
+            nodeRepository.save(node);
+            return;
+        }
+
         for (int i = 0, tagsSize = tags.size(); i < tagsSize; i++) {
             Tag tag = tags.get(i);
             Optional<Tag> storedTag = tagRepository.findById(tag.getId());
@@ -65,9 +70,10 @@ class NodeService {
     }
 
     public void update(Node node) {
-        if (nodeRepository.findById(node.getId()).isEmpty()) {
-            throw new ServiceException(ErrorType.NOT_FOUND, List.of(NODE_NOT_FOUND));
-        }
+        Node targetNode = nodeRepository.findById(node.getId())
+                .orElseThrow(() -> new ServiceException(ErrorType.NOT_FOUND, List.of(NODE_NOT_FOUND)));
+
+        node.setTags(targetNode.getTags());
 
         nodeRepository.save(node);
     }

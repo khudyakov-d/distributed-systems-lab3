@@ -11,7 +11,7 @@ import ru.nsu.ccfit.khudyakov.lab3.osm.tags.TagMapper;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2021-04-28T02:09:10+0700",
+    date = "2021-04-28T02:45:26+0700",
     comments = "version: 1.4.2.Final, compiler: IncrementalProcessingEnvironment from gradle-language-java-6.8.3.jar, environment: Java 11.0.10 (Ubuntu)"
 )
 @Component
@@ -38,6 +38,27 @@ public class NodeMapperImpl extends NodeMapper {
         node1.setChangeSet( node.getChangeSet() );
         node1.setTimestamp( node.getTimestamp() );
         node1.setTags( tagDtoListToTagList( node.getTags() ) );
+
+        return node1;
+    }
+
+    @Override
+    public Node map(NodeUpdateDto node) {
+        if ( node == null ) {
+            return null;
+        }
+
+        Node node1 = new Node();
+
+        node1.setId( node.getId() );
+        node1.setLatitude( node.getLatitude() );
+        node1.setLongitude( node.getLongitude() );
+        node1.setOwner( node.getOwner() );
+        node1.setUid( node.getUid() );
+        node1.setVisible( node.getVisible() );
+        node1.setVersion( node.getVersion() );
+        node1.setChangeSet( node.getChangeSet() );
+        node1.setTimestamp( node.getTimestamp() );
 
         return node1;
     }

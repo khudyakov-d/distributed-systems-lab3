@@ -16,7 +16,7 @@ interface NodeRepository extends JpaRepository<Node, Long> {
 
     @Query("SELECT n FROM Node n WHERE FUNCTION('earth_distance',\n" +
             "FUNCTION('ll_to_earth',:latitude, :longitude),\n" +
-            "FUNCTION('ll_to_earth',n.latitude,n.longitude)) > :radius")
+            "FUNCTION('ll_to_earth',n.latitude,n.longitude)) < :radius")
     List<Node> findAllInRadius(double latitude, double longitude, double radius);
 
 }

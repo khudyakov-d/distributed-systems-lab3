@@ -40,7 +40,7 @@ public class GeneralExceptionHandler extends ResponseEntityExceptionHandler {
                 .collect(Collectors.toList());
 
         return ApiResponse.createError(VALIDATION_ERROR,
-                List.of("Ошибка валидации"),
+                List.of("Validation error"),
                 errors);
     }
 

@@ -54,7 +54,7 @@ public class NodeController {
     }
 
     @PutMapping
-    public ApiResponse<Void> updateNode(@RequestBody @Valid NodeDto node) {
+    public ApiResponse<Void> updateNode(@RequestBody @Valid NodeUpdateDto node) {
         nodeService.update(nodeMapper.map(node));
         return ApiResponse.createOk(null);
     }
