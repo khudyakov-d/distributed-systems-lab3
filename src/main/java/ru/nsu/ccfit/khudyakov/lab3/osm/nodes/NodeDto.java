@@ -1,9 +1,9 @@
 package ru.nsu.ccfit.khudyakov.lab3.osm.nodes;
 
-import com.sun.istack.NotNull;
 import lombok.Data;
 import ru.nsu.ccfit.khudyakov.lab3.osm.tags.TagDto;
 
+import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 import java.util.List;
 

@@ -1,19 +1,19 @@
-ru/nsu/ccfit/khudyakov/lab3/osm/tags/TagRepository.java
- ru.nsu.ccfit.khudyakov.lab3.osm.tags.TagRepository
-ru/nsu/ccfit/khudyakov/lab3/osm/tags/TagId.java
- ru.nsu.ccfit.khudyakov.lab3.osm.tags.TagId
+ru/nsu/ccfit/khudyakov/lab3/osm/nodes/NodeController.java
+ ru.nsu.ccfit.khudyakov.lab3.osm.nodes.NodeController
+ru/nsu/ccfit/khudyakov/lab3/osm/nodes/NodeRepository.java
+ ru.nsu.ccfit.khudyakov.lab3.osm.nodes.NodeRepository
 ru/nsu/ccfit/khudyakov/lab3/osm/response/ApiResponse.java
  ru.nsu.ccfit.khudyakov.lab3.osm.response.ApiResponse
 ru/nsu/ccfit/khudyakov/lab3/osm/tags/TagMapper.java
  ru.nsu.ccfit.khudyakov.lab3.osm.tags.TagMapper
-ru/nsu/ccfit/khudyakov/lab3/osm/nodes/NodeRepository.java
- ru.nsu.ccfit.khudyakov.lab3.osm.nodes.NodeRepository
+ru/nsu/ccfit/khudyakov/lab3/osm/nodes/Node.java
+ ru.nsu.ccfit.khudyakov.lab3.osm.nodes.Node
 ru/nsu/ccfit/khudyakov/lab3/osm/exception/ServiceException.java
  ru.nsu.ccfit.khudyakov.lab3.osm.exception.ServiceException
 ru/nsu/ccfit/khudyakov/lab3/osm/response/Status.java
  ru.nsu.ccfit.khudyakov.lab3.osm.response.Status
-ru/nsu/ccfit/khudyakov/lab3/osm/tags/TagDto.java
- ru.nsu.ccfit.khudyakov.lab3.osm.tags.TagDto
+ru/nsu/ccfit/khudyakov/lab3/osm/nodes/NodeService.java
+ ru.nsu.ccfit.khudyakov.lab3.osm.nodes.NodeService
 ru/nsu/ccfit/khudyakov/lab3/osm/nodes/NodeDto.java
  ru.nsu.ccfit.khudyakov.lab3.osm.nodes.NodeDto
 ru/nsu/ccfit/khudyakov/lab3/osm/tags/Tag.java
@@ -22,13 +22,15 @@ ru/nsu/ccfit/khudyakov/lab3/osm/exception/GeneralExceptionHandler.java
  ru.nsu.ccfit.khudyakov.lab3.osm.exception.GeneralExceptionHandler
 ru/nsu/ccfit/khudyakov/lab3/osm/exception/ErrorType.java
  ru.nsu.ccfit.khudyakov.lab3.osm.exception.ErrorType
+ru/nsu/ccfit/khudyakov/lab3/osm/exception/ErrorMessageDto.java
+ ru.nsu.ccfit.khudyakov.lab3.osm.exception.ErrorMessageDto
 ru/nsu/ccfit/khudyakov/lab3/MainApplication.java
  ru.nsu.ccfit.khudyakov.lab3.MainApplication
-ru/nsu/ccfit/khudyakov/lab3/osm/nodes/NodeController.java
- ru.nsu.ccfit.khudyakov.lab3.osm.nodes.NodeController
 ru/nsu/ccfit/khudyakov/lab3/osm/nodes/NodeMapper.java
  ru.nsu.ccfit.khudyakov.lab3.osm.nodes.NodeMapper
-ru/nsu/ccfit/khudyakov/lab3/osm/nodes/Node.java
- ru.nsu.ccfit.khudyakov.lab3.osm.nodes.Node
-ru/nsu/ccfit/khudyakov/lab3/osm/nodes/NodeService.java
- ru.nsu.ccfit.khudyakov.lab3.osm.nodes.NodeService
+ru/nsu/ccfit/khudyakov/lab3/osm/tags/TagDto.java
+ ru.nsu.ccfit.khudyakov.lab3.osm.tags.TagDto
+ru/nsu/ccfit/khudyakov/lab3/osm/tags/TagId.java
+ ru.nsu.ccfit.khudyakov.lab3.osm.tags.TagId
+ru/nsu/ccfit/khudyakov/lab3/osm/tags/TagRepository.java
+ ru.nsu.ccfit.khudyakov.lab3.osm.tags.TagRepository

@@ -2,10 +2,10 @@ package ru.nsu.ccfit.khudyakov.lab3.osm.response;
 
 
 import lombok.Data;
+import ru.nsu.ccfit.khudyakov.lab3.osm.exception.ErrorMessageDto;
 import ru.nsu.ccfit.khudyakov.lab3.osm.exception.ErrorType;
 
 import java.util.List;
-import java.util.Map;
 
 import static ru.nsu.ccfit.khudyakov.lab3.osm.response.Status.ERROR;
 import static ru.nsu.ccfit.khudyakov.lab3.osm.response.Status.OK;
@@ -21,7 +21,7 @@ public class ApiResponse<T> {
 
     private List<String> errorMessages;
 
-    private Map<String, String> validationErrors;
+    private List<ErrorMessageDto> validationErrors;
 
     public static <S> ApiResponse<S> createOk(S data) {
         ApiResponse<S> apiResponse = new ApiResponse<>();
@@ -40,7 +40,7 @@ public class ApiResponse<T> {
 
     public static <S> ApiResponse<S> createError(ErrorType error,
                                                  List<String> errorMessages,
-                                                 Map<String, String > validationErrors) {
+                                                 List<ErrorMessageDto> validationErrors) {
         ApiResponse<S> apiResponse = createError(error, errorMessages);
         apiResponse.setValidationErrors(validationErrors);
         return apiResponse;
