@@ -2,6 +2,7 @@ package ru.nsu.ccfit.khudyakov.lab3.osm.nodes;
 
 import com.sun.istack.NotNull;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
 import ru.nsu.ccfit.khudyakov.lab3.osm.tags.Tag;
@@ -17,6 +18,7 @@ import java.util.List;
 
 @Data
 @Entity
+@EqualsAndHashCode(of = "id")
 public class Node {
 
     @Id
