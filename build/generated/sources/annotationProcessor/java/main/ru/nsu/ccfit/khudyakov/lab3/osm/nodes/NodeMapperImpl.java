@@ -11,7 +11,7 @@ import ru.nsu.ccfit.khudyakov.lab3.osm.tags.TagMapper;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2021-04-27T03:38:47+0700",
+    date = "2021-04-27T09:51:29+0700",
     comments = "version: 1.4.2.Final, compiler: IncrementalProcessingEnvironment from gradle-language-java-6.8.3.jar, environment: Java 11.0.10 (Ubuntu)"
 )
 @Component

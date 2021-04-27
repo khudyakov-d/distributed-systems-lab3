@@ -8,10 +8,7 @@ import ru.nsu.ccfit.khudyakov.lab3.osm.tags.Tag;
 import ru.nsu.ccfit.khudyakov.lab3.osm.tags.TagId;
 import ru.nsu.ccfit.khudyakov.lab3.osm.tags.TagRepository;
 
-import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
-
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
